@@ -1,0 +1,99 @@
+{
+  "users": [
+    {
+      "_id": "652431289abcdef012345671",
+      "name": "Jane Doe",
+      "email": "jane.patient@example.com",
+      "role": "patient",
+      "phone": "+91-9876543210",
+      "isActive": true
+    },
+    {
+      "_id": "652431289abcdef012345672",
+      "name": "Robert Smith",
+      "email": "robert.patient@example.com",
+      "role": "patient",
+      "phone": "+91-9876543211",
+      "isActive": true
+    },
+    {
+      "_id": "652431289abcdef012345673",
+      "name": "Dr. Sarah Jenkins",
+      "email": "sarah.jenkins@hospital.org",
+      "role": "doctor",
+      "specialization": "Cardiology",
+      "phone": "+91-9876543212",
+      "isActive": true
+    },
+    {
+      "_id": "652431289abcdef012345674",
+      "name": "Hospital Administrator",
+      "email": "admin@hospital.org",
+      "role": "admin",
+      "phone": "+91-9876543200",
+      "isActive": true
+    }
+  ],
+  "appointments": [
+    {
+      "_id": "652431289abcdef012345681",
+      "patientId": "652431289abcdef012345671",
+      "doctorId": "652431289abcdef012345673",
+      "appointmentDate": "2026-10-25",
+      "startTime": "10:00",
+      "endTime": "10:30",
+      "status": "confirmed",
+      "reasonForVisit": "Quarterly cardiology consultation and blood pressure follow-up"
+    }
+  ],
+  "medicalRecords": [
+    {
+      "_id": "652431289abcdef012345691",
+      "patientId": "652431289abcdef012345671",
+      "doctorId": "652431289abcdef012345673",
+      "appointmentId": "652431289abcdef012345681",
+      "diagnosis": "Essential Primary Hypertension",
+      "symptoms": ["Occasional morning headache", "Mild exertion dyspnea"],
+      "treatmentNotes": "Prescribed low-sodium diet and daily amlodipine 5mg. Patient tolerating medication well.",
+      "followUpDate": "2026-11-25T00:00:00.000Z"
+    }
+  ],
+  "prescriptions": [
+    {
+      "_id": "652431289abcdef0123456a1",
+      "patientId": "652431289abcdef012345671",
+      "doctorId": "652431289abcdef012345673",
+      "appointmentId": "652431289abcdef012345681",
+      "medicines": [
+        {
+          "medicineName": "Amlodipine Besylate",
+          "dosage": "5mg",
+          "frequency": "Once daily",
+          "duration": "30 days",
+          "instructions": "Take every morning with a glass of water"
+        },
+        {
+          "medicineName": "Telmisartan",
+          "dosage": "40mg",
+          "frequency": "Once daily",
+          "duration": "30 days",
+          "instructions": "Take at night before bed"
+        }
+      ],
+      "additionalInstructions": "Monitor resting blood pressure three times weekly and maintain a log."
+    }
+  ],
+  "medicalDocuments": [
+    {
+      "_id": "652431289abcdef0123456b1",
+      "patientId": "652431289abcdef012345671",
+      "uploadedBy": "652431289abcdef012345671",
+      "documentType": "lab-report",
+      "originalFileName": "Lipid_Panel_October_2026.pdf",
+      "mimeType": "application/pdf",
+      "ocrStatus": "completed",
+      "embeddingStatus": "completed",
+      "extractedText": "Total Cholesterol: 185 mg/dL. HDL: 52 mg/dL. LDL: 104 mg/dL. Triglycerides: 145 mg/dL. Normal limits."
+    }
+  ]
+}
